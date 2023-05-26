@@ -207,18 +207,23 @@ const filteredFood = foodArr.filter((obj)=> obj.tags.includes(`sharable`))
 
 //CODE HERE
 function filterByProperty(proptery,num,type){
-    
+    // proptery = foodArr[proptery]
+    emptyArray =[]
     if(type === `above`){
-        return emptyArray = foodArr.filter(obj => (obj.price) > num)
+        return emptyArray = foodArr.filter(obj => obj[proptery] > num)
+    }else if (type === `below`){
+        return emptyArray = foodArr.filter(obj => obj[proptery] < num)
+    }else {
+        return `Invalid search parameters entered`
     }
 }
-console.log(filterByProperty(`prices`,20,`above`))
 
 /*
-    Invoke the `filterByProperty` function passing
-    in a value for each paramter.
+Invoke the `filterByProperty` function passing
+in a value for each paramter.
 
-    You'll have to console.log to see the filtered array
+You'll have to console.log to see the filtered array
 */
 
 //CODE HERE
+console.log(filterByProperty(`price`,20,`blow`))
