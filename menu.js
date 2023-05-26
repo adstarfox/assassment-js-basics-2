@@ -207,8 +207,10 @@ const filteredFood = foodArr.filter((obj)=> obj.tags.includes(`sharable`))
 
 //CODE HERE
 function filterByProperty(proptery,num,type){
-    newFoodArray = foodArr.filter(obj => obj.includes(proptery) > num)
-    console.log(newFoodArray)
+    
+    if(type === `above`){
+        return emptyArray = foodArr.filter(obj => (obj.price) > num)
+    }
 }
 console.log(filterByProperty(`prices`,20,`above`))
 
