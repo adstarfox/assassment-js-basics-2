@@ -226,4 +226,4 @@ You'll have to console.log to see the filtered array
 */
 
 //CODE HERE
-console.log(filterByProperty(`price`,20,`blow`))
+console.log(filterByProperty(`price`,20,`below`))

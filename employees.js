@@ -71,8 +71,8 @@ let empOne = new Employee(`Jess`,[`weeday mornings`,`weekday afternoons`])
 
 //CODE HERE
 
-let empTwo = {...empOne}
-empTwo.name = `Nick`
+let empTwo = {...empOne, name:`Nick`}
+// empTwo.name = `Nick`
 // console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
@@ -125,7 +125,7 @@ class Manager extends Employee{
 */
 
 //CODE HERE
-let manager = new Manager (`Winston`,`Weekday Mornings, Weeday Afternoons`,[`Cece`,`Schmidt`])
+let manager = new Manager (`Winston`,[`Weekday Mornings`, `Weekday Afternoons`],[`Cece`,`Schmidt`])
 
 
 /*

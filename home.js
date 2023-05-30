@@ -83,12 +83,11 @@ let canWeDeliverTwo = function(zipCode){
     for(let i = 0; i < deliveryAreaZipCodes.length;i++){
         if(zipCode === deliveryAreaZipCodes[i]){
             return `You're in our deliver zone!`
-        }else {
-            return `Sorry, we can't deliver to that address.`
         }
     }
+    return `Sorry, we can't deliver to that address.`
 }
-// console.log(canWeDeliverTwo(85215))
+// console.log(canWeDeliverTwo(85204))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -144,4 +143,4 @@ to be displaying wrong on the live site.
 //CODE HERE
 
 deals[1].desc = deals[1].desc.replace(`March`,`April`).trim()
-console.log(deals)
+// console.log(deals)
